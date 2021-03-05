@@ -1,0 +1,22 @@
+
+// Curtir automaticamente
+const  next  =  document . querySelector ( 'a.coreSpriteRightPaginationArrow' ) ;
+var  counter  =  0 ;
+
+function  doLike ( )  {
+  const  like_btn  =  document . querySelector ( 'article> div.eo2As> section.ltpMr.Slqrh> span.fr66n> button' ) ;
+  if ( like_btn ) {
+      console . log ( 'clique \ n' ) ;
+      like_btn . clique ( ) ;
+      contador ++ ;
+  }
+  próximo . clique ( ) ;
+  console . log ( `Você já curtiu $ { counter } postagem (s)!` ) ;
+}
+
+( loop de função  ( ) { 
+    setTimeout ( ( )  =>  {
+      doLike ( ) ;
+      loop ( ) ;  
+    } ,  10.000 ) ;  // 10 segundos
+} ( ) ) ;
