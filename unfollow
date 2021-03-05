@@ -1,0 +1,16 @@
+// Deixar de seguir automaticamente
+let  contador  =  0 ;
+documento . querySelectorAll ( '._8A5w5' ) . forEach ( ( item ,  índice )  =>  {
+    setTimeout ( ( )  =>  {
+        if ( item . innerText  ==  'Seguindo' )  {
+            item . clique ( ) ;
+            documento . querySelectorAll ( '.-Cab_' ) . forEach ( item  =>  {
+                if ( item . innerText  ==  'Deixar de seguir' )  {
+                    item . clique ( ) ;
+                    contador ++ ;
+                    console . log ( `Você deixou de seguir $ { contador } pessoa (s)!` )
+                }
+            } )
+        } 
+    } ,  índice * 10000 ) ;
+} ) ;
